@@ -312,7 +312,7 @@ public class Main extends Application {
         vbox.setMinWidth(200);
         vbox.setMinHeight(80);
 
-        Font fontTextKin = Font.font("Chococooky", 28);
+        Font fontTextKin = Font.font("Noto Sans", 28);
 
         txtTone = new Text(ToeneNamen[Ton]);
         txtTone.setFont(fontTextKin);
@@ -360,7 +360,7 @@ public class Main extends Application {
 
         tzolkin_stage.setScene(haabscene);
 
-        tzolkin_stage.getIcons().add(new Image("Icon.png"));
+        //tzolkin_stage.getIcons().add(new Image(""));
         tzolkin_stage.setTitle("Cholqij");
 
         tzolkin_stage.setX(3084 + 21);
@@ -381,7 +381,7 @@ public class Main extends Application {
         
         radjahrroot.getChildren().add(ivRadjahr_Haab);
 
-        Font fontTextWinal = Font.font("Chococooky", 22);
+        Font fontTextWinal = Font.font("Noto Sans", 22);
 
         Label[] label = new Label[365];
         
@@ -417,7 +417,7 @@ public class Main extends Application {
 
         radjahr_stage.setScene(radjahrscene);
 
-        radjahr_stage.getIcons().add(new Image("Icon.png"));
+        //radjahr_stage.getIcons().add(new Image(""));
         radjahr_stage.setTitle("Haab");
         
         radjahr_stage.setX(3684);
@@ -428,7 +428,7 @@ public class Main extends Application {
 
         Timer DayTimer = new Timer();
 
-        long cTime = System.currentTimeMillis() + 7200000; // plus 2 Stunden Sommerzeit (7200000), plus 1 Stunde
+        long cTime = System.currentTimeMillis() + 3600000; // plus 2 Stunden Sommerzeit (7200000), plus 1 Stunde
                                                            // Winterzeit (3600000)!
 
         long dSekunden = 86400000 - cTime % 86400000;
